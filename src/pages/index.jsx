@@ -24,15 +24,15 @@ export default Index;
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark {
       edges {
         node {
           fields {
             slug
           }
           frontmatter {
-            service
-            client
+            name
+            description
             cover {
               childImageSharp {
                 sizes(maxWidth: 850, quality: 90, traceSVG: { color: "#f3f3f3" }) {

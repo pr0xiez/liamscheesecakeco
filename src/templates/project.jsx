@@ -26,7 +26,7 @@ const Project = props => {
             <section className={styles.header} style={{ backgroundColor: palette.vibrant }}>
               <div className={styles.title}>
                 <Fade down duration={1250} tag="h1">
-                  {project.title}
+                  {project.name}
                 </Fade>
               </div>
               <div className={styles.information}>
@@ -35,23 +35,7 @@ const Project = props => {
                     {config.client}
                   </Fade>
                   <Fade up duration={1250} delay={500} className={styles.bottom}>
-                    {project.client}
-                  </Fade>
-                </div>
-                <div className={styles.infoBlock}>
-                  <Fade up duration={1250} className={styles.top}>
-                    {config.date}
-                  </Fade>
-                  <Fade up duration={1250} delay={500} className={styles.bottom}>
-                    {project.date}
-                  </Fade>
-                </div>
-                <div className={styles.infoBlock}>
-                  <Fade up duration={1250} className={styles.top}>
-                    {config.service}
-                  </Fade>
-                  <Fade up duration={1250} delay={500} className={styles.bottom}>
-                    {project.service}
+                    {project.name}
                   </Fade>
                 </div>
               </div>
@@ -75,10 +59,8 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title
-        date(formatString: "DD.MM.YYYY")
-        client
-        service
+        name
+        description
         cover {
           childImageSharp {
             resize(width: 800) {

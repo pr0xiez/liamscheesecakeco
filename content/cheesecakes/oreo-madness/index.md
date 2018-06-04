@@ -1,9 +1,7 @@
 ---
-client: "CubeRound"
-title: "CubeRound - Make Cubes round!"
-cover: "./cubeRound.jpg"
-date: "2017-10-26"
-service: "Website"
+name: "Oreo Madness"
+description: "A Cheesecake Twist on Oreo Cookies!"
+cover: "./oreoMadness.jpg"
 ---
 # Description
 

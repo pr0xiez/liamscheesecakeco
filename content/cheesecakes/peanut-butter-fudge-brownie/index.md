@@ -1,7 +1,7 @@
 ---
-name: "Nutter Butter Finger"
-description: "A Cheesecake Twist on Nutter Butter and Butter Finger candies!"
-cover: "./nutterButterFinger.jpg"
+name: "Peanut Butter Fudge Brownie"
+description: "A Cheesecake Twist with Peanut Butter Fudge and Brownies!"
+cover: "./peanutButterFudgeBrownie.jpg"
 ---
 # Description
 

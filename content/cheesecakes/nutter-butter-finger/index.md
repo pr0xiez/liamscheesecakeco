@@ -1,6 +1,6 @@
 ---
 name: "Nutter Butter Finger"
-title: "Nutter Butter Finger - A Twist on Nutter Butter and Butter Finger candies"
+description: "A Cheesecake Twist on Nutter Butter and Butter Finger candies"
 cover: "./nutterbutterfinger.jpg"
 ---
 # Description

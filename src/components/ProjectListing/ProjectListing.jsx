@@ -11,8 +11,8 @@ export default class ProjectListing extends React.PureComponent {
       List.push({
         path: projectEdge.node.fields.slug,
         cover: projectEdge.node.frontmatter.cover.childImageSharp.sizes,
-        client: projectEdge.node.frontmatter.client,
-        service: projectEdge.node.frontmatter.service,
+        name: projectEdge.node.frontmatter.name,
+        title: projectEdge.node.frontmatter.title,
         imageURL: projectEdge.node.frontmatter.cover.childImageSharp.sizes.src,
       });
     });
@@ -32,8 +32,8 @@ export default class ProjectListing extends React.PureComponent {
                 <Palette image={project.imageURL}>
                   {palette => <div className={styles.overlay} style={{ backgroundColor: palette.vibrant }} />}
                 </Palette>
-                <h2 className={styles.client} key={project.client}>
-                  {project.client}
+                <h2 className={styles.client} key={project.name}>
+                  {project.name}
                 </h2>
               </Link>
             </div>

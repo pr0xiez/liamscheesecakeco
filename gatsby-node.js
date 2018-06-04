@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     resolve(
       graphql(`
         {
-          projects: allMarkdownRemark {
+          cheesecakes: allMarkdownRemark {
             edges {
               node {
                 fields {
@@ -46,7 +46,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors);
         }
 
-        result.data.projects.edges.forEach(edge => {
+        result.data.cheesecakes.edges.forEach(edge => {
           createPage({
             path: edge.node.fields.slug,
             component: projectPage,

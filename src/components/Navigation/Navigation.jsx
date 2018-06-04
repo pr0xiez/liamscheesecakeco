@@ -37,6 +37,9 @@ export default class Navigation extends Component {
                 <Link to="/contact" activeClassName="active">
                   Contact
                 </Link>
+                <Link to="/pricing" activeClassName="active">
+                  Pricing
+                </Link>
               </span>
             </nav>
             <div className={styles.name}>
@@ -75,6 +78,9 @@ export default class Navigation extends Component {
               </Link>
               <Link to="/contact" activeClassName="active" onClick={() => this.closeMenu()}>
                 Contact
+              </Link>
+              <Link to="/pricing" activeClassName="active" onClick={() => this.closeMenu()}>
+                Pricing
               </Link>
               <div className={styles.mobileNavSocialMedia}>
                 <a href="https://www.instagram.com/lekoarts.de" target="_blank" rel="noopener noreferrer">

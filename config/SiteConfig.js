@@ -15,9 +15,7 @@ module.exports = {
   copyright: 'Copyright © 2018. All rights reserved.', // Copyright in the footer of the site
   // You can translate these three words into your language if you want.
   // They'll be shown on the project page header
-  client: 'Client',
-  date: 'Date',
-  service: 'Service',
+  description: 'Description',
   // Date format used in your project header
   // More information here: https://date-fns.org/v1.29.0/docs/format
   dateFormat: 'DD.MM.YYYY',

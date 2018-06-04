@@ -32,10 +32,10 @@ const Project = props => {
               <div className={styles.information}>
                 <div className={styles.infoBlock}>
                   <Fade up duration={1250} className={styles.top}>
-                    {config.client}
+                    {config.description}
                   </Fade>
                   <Fade up duration={1250} delay={500} className={styles.bottom}>
-                    {project.name}
+                    {project.description}
                   </Fade>
                 </div>
               </div>

@@ -31,9 +31,6 @@ const Project = props => {
               </div>
               <div className={styles.information}>
                 <div className={styles.infoBlock}>
-                  <Fade up duration={1250} className={styles.top}>
-                    {config.description}
-                  </Fade>
                   <Fade up duration={1250} delay={500} className={styles.bottom}>
                     {project.description}
                   </Fade>
@@ -44,7 +41,9 @@ const Project = props => {
         </Palette>
       </div>
       <Container>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        <Fade up duration={1250} delay={500}>
+          <div className={styles.content} dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        </Fade>
       </Container>
       <Footer />
     </div>

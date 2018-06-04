@@ -10,15 +10,17 @@ const About = () => (
     <Helmet title={`About | ${config.siteTitle}`} />
     <Header>About Us</Header>
     <Container text>
-      <h1>Liam's Cheesecake: A Unique Twist to a Traditional Desert</h1>
+      <h2>Liam's Cheesecake: A Unique Twist to a Traditional Desert</h2>
       <p>
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-        texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
-        small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-        paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing
-        has no control about the blind texts it is an almost unorthographic life One day however a small line of blind
-        text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to
-        do so, because there were thousands.
+      Liam's Cheesecake's purpose for business is to provide people like you and I the tastiest 
+      cheesecake creations ever to be enjoyed. The company was founded by Liam Danz, an
+      entrepreneur with a passion for making people the best desserts. The idea for this 
+      unique twist with cheesecake came to me from seeing posts on instagram of different desserts in 
+      mason jars and Liam's love for cheesecake itself! Who doesn’t love cheesecake?! The goal of Liam's Cheesecake 
+      is to be able to ship our cheesecake right to your door, can you say heaven? We at Liamscheesecakeco 
+      believe everyone should get to taste our product, not just local. Click here to order! (Link to order site) 
+      Our location is based out of Findlay Ohio, for the exact address you can go to @liamscheesecakeco on instagramlink, 
+      Snapchat link, Facebook link. Open times, stock for the day and close times will be posted daily on them. 
       </p>
     </Container>
     <Footer />

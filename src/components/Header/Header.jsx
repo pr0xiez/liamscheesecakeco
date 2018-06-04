@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 
 const Header = ({ children }) => (
   <div className={styles.header}>
-    <Fade down tag="h1">
+    <Fade down duration={1200} tag="h1">
       {children}
     </Fade>
   </div>

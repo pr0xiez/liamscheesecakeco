@@ -18,9 +18,7 @@ const About = () => (
       unique twist with cheesecake came to me from seeing posts on instagram of different desserts in 
       mason jars and Liam's love for cheesecake itself! Who doesn’t love cheesecake?! The goal of Liam's Cheesecake 
       is to be able to ship our cheesecake right to your door, can you say heaven? We at Liamscheesecakeco 
-      believe everyone should get to taste our product, not just local. Click here to order! (Link to order site) 
-      Our location is based out of Findlay Ohio, for the exact address you can go to @liamscheesecakeco on instagramlink, 
-      Snapchat link, Facebook link. Open times, stock for the day and close times will be posted daily on them. 
+      believe everyone should get to taste our product, not just local.
       </p>
     </Container>
     <Footer />

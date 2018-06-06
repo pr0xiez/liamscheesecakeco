@@ -1,6 +1,6 @@
 ---
 name: "Peanut Butter Fudge Brownie"
-description: "A Cheesecake Twist with Peanut Butter Fudge and Brownies!"
+description: "A Cheesecake Twist with Peanut Butter and Fudge Brownies!"
 cover: "./peanutButterFudgeBrownie.jpg"
 ---
 # Description

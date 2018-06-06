@@ -5,7 +5,7 @@ module.exports = {
   siteUrl: 'https://portfolio-emma.netlify.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
-  siteDescription: 'Minimalistic bright portfolio with full-width grid and large images',
+  siteDescription: 'A Unique Twist to a Traditional Dessert',
   siteFBAppID: '123456789', // Facebook App ID
   userTwitter: '@emma', // Twitter Username
   // og: Meta Tags
@@ -20,7 +20,7 @@ module.exports = {
   // More information here: https://date-fns.org/v1.29.0/docs/format
   dateFormat: 'DD.MM.YYYY',
   // Manifest and Progress color
-  themeColor: '#3498DB',
+  themeColor: '#5339b2',
   backgroundColor: '#2b2e3c',
   // Settings for typography.js
   headerFontFamily: 'Merriweather',

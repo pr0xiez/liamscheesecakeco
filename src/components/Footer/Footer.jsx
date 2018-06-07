@@ -4,7 +4,10 @@ import config from '../../../config/SiteConfig';
 
 const Footer = () => (
   <footer className={styles.footer}>
-    {config.copyright} - <a href="mailto:liamscheesecakeco@gmail.com">Contact Us</a>
+    {config.copyright}
+    <p>
+      <a href="mailto:liamscheesecakeco@gmail.com">Contact Us</a>
+    </p>
   </footer>
 );
 

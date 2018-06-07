@@ -12,6 +12,10 @@ const Pricing = () => (
     <Container text>
       <h2>Large Mason Jar: $8</h2>
       <h2>Small Mason Jar: $5</h2>
+      <p>
+        Reach out to us for ordering information via our social media
+        or by clicking contact us below!
+      </p>
     </Container>
     <Footer />
   </div>

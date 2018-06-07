@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import Headroom from 'react-headroom';
-import { FaInstagram, FaFacebookSquare } from 'react-icons/lib/fa';
+import { FaInstagram, FaFacebookSquare, FaSnapchatSquare } from 'react-icons/lib/fa';
 import { slide as Menu } from 'react-burger-menu';
 import { Fade } from 'react-reveal';
 import config from '../../../config/SiteConfig';
@@ -34,9 +34,6 @@ export default class Navigation extends Component {
                 <Link to="/about" activeClassName="active">
                   About Us
                 </Link>
-                <Link to="/contact" activeClassName="active">
-                  Contact
-                </Link>
                 <Link to="/pricing" activeClassName="active">
                   Pricing
                 </Link>
@@ -57,13 +54,18 @@ export default class Navigation extends Component {
                 <a href="https://www.facebook.com/Liams-Cheescake-243775213031817/" target="_blank" rel="noopener noreferrer">
                   <FaFacebookSquare />
                 </a>
+                <a href="https://www.snapchat.com/add/Liamscheesecakeco" target="_blank" rel="noopener noreferrer">
+                  <FaSnapchatSquare />
+                </a>
               </span>
             </div>
           </Fade>
         </Headroom>
         <div className={styles.mobileNav}>
           <div className={styles.mobileNavName}>
-            <h3>{config.siteTitle}</h3>
+            <Link to="/">
+              <h3>{config.siteTitle}</h3>
+            </Link>
           </div>
           <div className={styles.menu}>
             <Menu isOpen={this.state.menuOpen} onStateChange={this.handleStateChange} width="100%">
@@ -71,10 +73,7 @@ export default class Navigation extends Component {
                 <h1>{config.siteTitle}</h1>
               </Link>
               <Link to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
-                About Us
-              </Link>
-              <Link to="/contact" activeClassName="active" onClick={() => this.closeMenu()}>
-                Contact
+                About
               </Link>
               <Link to="/pricing" activeClassName="active" onClick={() => this.closeMenu()}>
                 Pricing
@@ -85,6 +84,9 @@ export default class Navigation extends Component {
                 </a>
                 <a href="https://www.facebook.com/Liams-Cheescake-243775213031817/" target="_blank" rel="noopener noreferrer">
                   <FaFacebookSquare />
+                </a>
+                <a href="https://www.snapchat.com/add/Liamscheesecakeco" target="_blank" rel="noopener noreferrer">
+                  <FaSnapchatSquare />
                 </a>
               </div>
             </Menu>

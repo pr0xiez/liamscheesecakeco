@@ -3,7 +3,7 @@
 .content {
   margin: 0 auto;
   padding-bottom: $distance;
-  padding-top: $distance;
+  padding-top: 8rem;
 }
 
 .headerWrapper {
@@ -15,25 +15,14 @@
 }
 
 .header {
-  background-color: $brand-primary;
+  background-color: $brand-secondary;
   color: #fff;
-  height: 25rem;
-  padding: 6rem $distance;
+  height: 35rem;
+  padding: 1rem;
   position: absolute;
   text-align: center;
   transition: all 0.5s;
   width: 100%;
-}
-
-.title {
-  margin: 1rem 0;
-}
-
-.top {
-  font-size: 80%;
-  margin-bottom: 0.5rem;
-  position: relative;
-  text-transform: uppercase;
 }
 
 .bottom {

@@ -34,8 +34,8 @@ export default class Navigation extends Component {
                 <Link to="/about" activeClassName="active">
                   About Us
                 </Link>
-                <Link to="/pricing" activeClassName="active">
-                  Pricing
+                <Link to="/ordering" activeClassName="active">
+                  Ordering
                 </Link>
               </span>
             </nav>
@@ -75,8 +75,8 @@ export default class Navigation extends Component {
               <Link to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
                 About
               </Link>
-              <Link to="/pricing" activeClassName="active" onClick={() => this.closeMenu()}>
-                Pricing
+              <Link to="/ordering" activeClassName="active" onClick={() => this.closeMenu()}>
+                Ordering
               </Link>
               <div className={styles.mobileNavSocialMedia}>
                 <a href="https://www.instagram.com/liamscheesecakeco" target="_blank" rel="noopener noreferrer">

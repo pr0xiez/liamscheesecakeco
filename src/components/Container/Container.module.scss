@@ -10,6 +10,23 @@
 .text {
   max-width: $container-text;
 
+  h2 {
+    line-height: 2.5rem;
+  }
+
+  div {
+    font-size: 2rem;
+
+    span {
+      display: block;
+
+      a {
+        font-size: 3rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+
   p {
     font-size: 1.25rem;
     letter-spacing: -0.003em;

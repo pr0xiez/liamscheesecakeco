@@ -88,8 +88,15 @@
   top: 1rem;
 
   h3 {
-    font-size: 23px !important;
-    margin-bottom: 0 !important;
+    font-size: 26px !important;
+    margin-top: 5px;
+    color: $black;
+  }
+}
+
+.bm-item {
+  a {
+    margin-left: 3rem;
   }
 }
 
@@ -97,7 +104,5 @@
   font-size: 1.5rem;
   margin-top: 6rem;
 
-  a:not(:first-child) {
-    margin-left: 1.5rem;
-  }
+  
 }

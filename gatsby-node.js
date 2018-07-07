@@ -13,9 +13,9 @@ exports.onCreateNode = ({ node, boundActionCreators }) => {
     }
     if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'name')
     ) {
-      slug = `/${_.kebabCase(node.frontmatter.title)}`;
+      slug = `/${_.kebabCase(node.frontmatter.name)}`;
     }
     createNodeField({ node, name: 'slug', value: slug });
   }

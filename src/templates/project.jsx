@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Fade } from 'react-reveal';
 import Palette from 'react-palette';
+import Img from 'gatsby-image';
 import config from '../../config/SiteConfig';
 import SEO from '../components/SEO/SEO';
 import Footer from '../components/Footer/Footer';
@@ -12,7 +13,9 @@ const Project = props => {
   const { slug } = props.pathContext;
   const postNode = props.data.markdownRemark;
   const project = postNode.frontmatter;
+  const image = project.cover.childImageSharp.resolutions;
   const imageURL = project.cover.childImageSharp.resize.src;
+  console.log()
   if (!project.id) {
     project.id = slug;
   }
@@ -21,30 +24,19 @@ const Project = props => {
       <Helmet title={`${project.title} | ${config.siteTitle}`} />
       <SEO postPath={slug} postNode={postNode} postSEO />
       <div className={styles.headerWrapper}>
-        <Palette image={imageURL}>
-          {palette => (
-            <section className={styles.header} style={{ backgroundColor: palette.vibrant }}>
-              <div className={styles.title}>
-                <Fade down duration={1250} tag="h1">
-                  {project.name}
-                </Fade>
-              </div>
-              <div className={styles.information}>
-                <div className={styles.infoBlock}>
-                  <Fade up duration={1250} className={styles.top}>
-                    {config.client}
-                  </Fade>
-                  <Fade up duration={1250} delay={500} className={styles.bottom}>
-                    {project.name}
-                  </Fade>
-                </div>
-              </div>
-            </section>
-          )}
-        </Palette>
+        <section className={styles.header}>
+          <Img resolutions={image} />
+          <div className={styles.title}>
+            <Fade down duration={1250} tag="h1">
+              {project.name}
+            </Fade>
+          </div>
+        </section>
       </div>
       <Container>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        <Fade up duration={1250} delay={200}>
+          <div className={styles.content} dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        </Fade>
       </Container>
       <Footer />
     </div>
@@ -63,8 +55,11 @@ export const pageQuery = graphql`
         description
         cover {
           childImageSharp {
-            resize(width: 800) {
+            resize(width: 200) {
               src
+            }
+            resolutions(height: 390, width: 350) {
+              ...GatsbyImageSharpResolutions
             }
           }
         }

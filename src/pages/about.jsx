@@ -8,17 +8,17 @@ import config from '../../config/SiteConfig';
 const About = () => (
   <div className="container about-container">
     <Helmet title={`About | ${config.siteTitle}`} />
-    <Header>About</Header>
+    <Header>About Us</Header>
     <Container text>
-      <h1>Hi!</h1>
+      <h2>Liam's Cheesecake: A Unique Twist to a Traditional Dessert</h2>
       <p>
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-        texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
-        small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-        paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing
-        has no control about the blind texts it is an almost unorthographic life One day however a small line of blind
-        text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to
-        do so, because there were thousands.
+      Founded in 2018, Liam's Cheesecake's purpose for business is to provide people like you the tastiest 
+      cheesecake creations ever to be enjoyed. The company was founded by Liam Danz, an
+      entrepreneur with a passion for making people the best desserts. The idea for this 
+      unique twist of cheesecake came from seeing posts on Instagram of different desserts in 
+      mason jars and Liam's love for cheesecake itself! Who doesn’t love cheesecake?! The future goal of Liam's Cheesecake 
+      is to be able to ship our cheesecake right to your door! We at Liam's Cheesecake 
+      believe everyone should get to enjoy cheesecake in a non-traditional way.
       </p>
     </Container>
     <Footer />

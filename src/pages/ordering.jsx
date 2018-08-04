@@ -12,36 +12,14 @@ const Ordering = () => (
     <Header>Ordering</Header>
     <Container text>
     <div className="pricing">
-      <strong>Prices:</strong>
       <ul>
-        <li>Large Mason Jar: $8</li>
+        <li>Large Mason Jar: $10</li>
         <li>Small Mason Jar $5</li>
       </ul>
     </div>
-      <p>
-        Reach out to us via email or social media to order at this time
-      </p>
-      <div>
-        <a href="mailto:liamscheesecakeco@gmail.com">Email Us</a>
-        <span>
-          Instagram:
-          <a href="https://www.instagram.com/liamscheesecakeco" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-        </span>
-        <span>
-          Facebook:
-          <a href="https://www.facebook.com/Liams-Cheescake-243775213031817/" target="_blank" rel="noopener noreferrer">
-            <FaFacebookSquare />
-          </a>
-        </span>
-        <span>
-          Snapchat:
-          <a href="https://www.snapchat.com/add/Liamscheesecakeco" target="_blank" rel="noopener noreferrer">
-            <FaSnapchatSquare />
-          </a>
-        </span>
-      </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8GRbxA2eA9dtoL-FwRAjPz4oDUOJpqe-d_7putXIPC1k_yw/viewform?ts=5b65a2a4" target="_blank">
+      Click here to order!
+    </a>
     </Container>
     <Footer />
   </div>
